@@ -846,3 +846,93 @@ body {
 .team-card p {
   line-height: 1.4;
 }
+
+/* Container & Positioning */
+.mini-chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+/* Chat Toggle Button */
+.mini-chat-button {
+  background-color: #00c1d4;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Chat Window */
+.mini-chat-window {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+/* Header */
+.mini-chat-header {
+  background-color: #00c1d4;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini-chat-header span {
+  font-weight: 600;
+}
+
+.mini-chat-header button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Body */
+.mini-chat-body {
+  padding: 10px;
+}
+
+.user-msg {
+  margin-bottom: 8px;
+}
+
+/* Quick Replies */
+.quick-replies {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 8px;
+}
+
+.quick-reply {
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.quick-reply:hover {
+  background-color: #ddd;
+}
+
+/* Response Bubble */
+.chat-response {
+  background-color: #eee;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+}

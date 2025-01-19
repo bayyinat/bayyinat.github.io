@@ -270,6 +270,44 @@
         </div>
       </div>
 
+      <!-- Mini Chat Container -->
+      <div class="mini-chat-container">
+        <!-- The button to open/close chat -->
+        <div class="mini-chat-button" id="miniChatToggle">Chat with us</div>
+
+        <!-- The chat window (initially hidden) -->
+        <div class="mini-chat-window" id="miniChatWindow" style="display: none">
+          <div class="mini-chat-header">
+            <span>Bayyinat Quick Chat</span>
+            <button id="miniChatClose" aria-label="Close Chat">&times;</button>
+          </div>
+          <div class="mini-chat-body">
+            <p class="user-msg">Hi! How can I help you today?</p>
+            <div class="quick-replies">
+              <button
+                class="quick-reply"
+                data-reply="I want info about free sessions"
+              >
+                Free session info
+              </button>
+              <button
+                class="quick-reply"
+                data-reply="I want to schedule a class"
+              >
+                Schedule a class
+              </button>
+              <button
+                class="quick-reply"
+                data-reply="I need to contact you directly"
+              >
+                Contact info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end Chat Container -->
+
       <!-- Packages -->
       <div class="packages">
         <div class="package-card">
@@ -304,4 +342,58 @@
       <p>&copy; 2025 Bayyinat. All Rights Reserved.</p>
     </footer>
   </body>
+
+  <!--Start of Tawk.to Script-->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const chatToggle = document.getElementById("miniChatToggle");
+      const chatWindow = document.getElementById("miniChatWindow");
+      const chatClose = document.getElementById("miniChatClose");
+      const quickReplyButtons = document.querySelectorAll(".quick-reply");
+      const chatBody = document.querySelector(".mini-chat-body");
+
+      // Toggle chat window
+      chatToggle.addEventListener("click", () => {
+        if (chatWindow.style.display === "none") {
+          chatWindow.style.display = "block";
+        } else {
+          chatWindow.style.display = "none";
+        }
+      });
+
+      // Close chat
+      chatClose.addEventListener("click", () => {
+        chatWindow.style.display = "none";
+      });
+
+      // Quick replies
+      quickReplyButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const userReply = btn.getAttribute("data-reply");
+          let responseText = "";
+
+          // Generate a short response based on which button was clicked
+          if (userReply.includes("free session")) {
+            responseText =
+              "Great! We offer a free trial session for new students. " +
+              "Just email us at bayyinat540@gmail.com or call/WhatsApp +201129261490 to schedule!";
+          } else if (userReply.includes("schedule a class")) {
+            responseText =
+              "We’d love to help you schedule a class. " +
+              "Please email bayyinat540@gmail.com or WhatsApp +201129261490 for available times.";
+          } else if (userReply.includes("contact")) {
+            responseText =
+              "You can reach us at bayyinat540@gmail.com or call/WhatsApp +201129261490 any time.";
+          }
+
+          // Create a response div and append it to the chat body
+          const responseEl = document.createElement("div");
+          responseEl.classList.add("chat-response");
+          responseEl.textContent = responseText;
+          chatBody.appendChild(responseEl);
+        });
+      });
+    });
+  </script>
+  <!--End of Tawk.to Script-->
 </html>
