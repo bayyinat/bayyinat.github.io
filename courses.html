@@ -41,7 +41,12 @@
 
     <!-- Header -->
     <header class="main-header">
-      <div class="logo">Bayyinat</div>
+      <div class="logo">
+        <img
+          src="./bayyinat-logo.png"
+          alt="Bayyinat: Quran, Arabic, and Islamic Studies"
+        />
+      </div>
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="courses.html">Courses</a>
@@ -74,7 +79,7 @@
       <div class="course-info">
         <h3>Tajweed</h3>
         <div class="course-info-content">
-          <img src="https://via.placeholder.com/320x180" alt="Tajweed Course" />
+          <img src="islam.webp" alt="Tajweed Course" />
           <div class="course-description">
             <p>
               Master the art of Quranic recitation, focusing on proper
@@ -92,42 +97,21 @@
         </div>
       </div>
 
-      <!-- Arabic -->
+      <!-- Quran & Arabic (Merged) -->
       <div class="course-info">
-        <h3>Arabic</h3>
+        <h3>Quran & Arabic</h3>
         <div class="course-info-content">
-          <img src="https://via.placeholder.com/320x180" alt="Arabic Course" />
+          <img src="./tajweed.webp" alt="Quran & Arabic Course" />
           <div class="course-description">
             <p>
-              Develop your reading, writing, and conversation skills with our
-              structured Arabic course. Starting from the basics of the
-              alphabet, progress toward fluency and confidence in everyday
-              dialogues.
+              Combine reading, writing, and conversation skills in Arabic with
+              deeper exploration of the Quran. This course covers both the
+              language fundamentals and thematic studies of Quranic verses,
+              enabling students to connect linguistically and spiritually.
             </p>
             <ul>
-              <li>Interactive Exercises</li>
+              <li>Surah-by-Surah Guidance & Tafsir</li>
               <li>Grammar & Vocabulary Modules</li>
-              <li>Supportive Community Practice</li>
-            </ul>
-            <a href="#" class="btn">Enroll Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Quran -->
-      <div class="course-info">
-        <h3>Quran</h3>
-        <div class="course-info-content">
-          <img src="https://via.placeholder.com/320x180" alt="Quran Course" />
-          <div class="course-description">
-            <p>
-              Dive into the deeper understanding of the Quran with thematic
-              analysis and contextual explanations. Students gain insight into
-              the messages and stories within its chapters.
-            </p>
-            <ul>
-              <li>Surah-by-Surah Guidance</li>
-              <li>Verses & Tafsir (Interpretation)</li>
               <li>Interactive Group Discussions</li>
             </ul>
             <a href="#" class="btn">Enroll Now</a>
@@ -139,7 +123,7 @@
       <div class="course-info">
         <h3>Islamic</h3>
         <div class="course-info-content">
-          <img src="https://via.placeholder.com/320x180" alt="Islamic Course" />
+          <img src="./tajweed.webp" alt="Islamic Course" />
           <div class="course-description">
             <p>
               Explore Islamic history, values, and teachings in an engaging
@@ -160,10 +144,7 @@
       <div class="course-info">
         <h3>All in One</h3>
         <div class="course-info-content">
-          <img
-            src="https://via.placeholder.com/320x180"
-            alt="All in One Course"
-          />
+          <img src="./all_of_one.webp" alt="All in One Course" />
           <div class="course-description">
             <p>
               Get the complete experience by combining Tajweed, Arabic, Quran,
@@ -202,3 +183,20 @@
     <!--End of Tawk.to Script-->
   </body>
 </html>
+
+<script>
+  // Wait until the page loads
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById("mobileMenuToggle");
+    const navbar = document.getElementById("navbar");
+
+    toggleButton.addEventListener("click", () => {
+      // If the nav is hidden, show it; if shown, hide it
+      if (navbar.style.display === "block") {
+        navbar.style.display = "none";
+      } else {
+        navbar.style.display = "block";
+      }
+    });
+  });
+</script>

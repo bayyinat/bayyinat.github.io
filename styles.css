@@ -14,6 +14,13 @@ body {
   position: relative;
 }
 
+.logo img {
+  max-height: 90px;
+  /* or any height you prefer */
+  width: auto;
+  /* keeps the original aspect ratio */
+}
+
 /* Fixed Social Icons */
 .social-icons {
   position: fixed;
@@ -752,6 +759,97 @@ body {
   margin-bottom: 2rem;
   line-height: 1.5;
 }
+
+/* Core Values */
+.core-values {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.core-values h3 {
+  font-family: 'Fredoka One', cursive;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.core-values ul {
+  list-style: disc;
+  margin-left: 2rem;
+  line-height: 1.6;
+}
+
+.core-values li {
+  margin-bottom: 0.5rem;
+}
+
+/* Timeline / Milestones */
+.timeline {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.timeline h3 {
+  font-family: 'Fredoka One', cursive;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.timeline-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item span {
+  font-weight: 600;
+  color: #00c1d4;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2rem;
+  color: #00c1d4;
+  margin-bottom: 1.5rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  line-height: 1.5;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+
+.testimonial-author {
+  font-weight: 600;
+  text-align: right;
+}
+
 
 /* Mission & Vision */
 .mv-section {

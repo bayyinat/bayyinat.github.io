@@ -26,12 +26,17 @@
   <body>
     <!-- Header (reuse from your main site) -->
     <header class="main-header">
-      <div class="logo">Bayyinat</div>
+      <div class="logo">
+        <img
+          src="./bayyinat-logo.png"
+          alt="Bayyinat: Quran, Arabic, and Islamic Studies"
+        />
+      </div>
       <nav class="main-nav">
         <a href="index.html">Home</a>
         <a href="courses.html">Courses</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
@@ -160,4 +165,20 @@
       <p>&copy; 2025 Bayyinat. All Rights Reserved.</p>
     </footer>
   </body>
+  <script>
+    // Wait until the page loads
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleButton = document.getElementById("mobileMenuToggle");
+      const navbar = document.getElementById("navbar");
+
+      toggleButton.addEventListener("click", () => {
+        // If the nav is hidden, show it; if shown, hide it
+        if (navbar.style.display === "block") {
+          navbar.style.display = "none";
+        } else {
+          navbar.style.display = "block";
+        }
+      });
+    });
+  </script>
 </html>
