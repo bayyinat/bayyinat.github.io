@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Bayyinat</title>
+
+    <!-- Google Fonts & Font Awesome (if needed) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-BuBTd13O2PdC0C+RNHj2vZyF2ThGH/0Os+Uqz000zZBBsZ0AcjlPW/1+LkNBZaLqs5ao0v9rj4DH9yX1TI5Crg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Main CSS (reuse your existing styles.css) -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header (reuse from your main site) -->
+    <header class="main-header">
+      <div class="logo">Bayyinat</div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section (optional) -->
+    <section class="hero-section contact-hero">
+      <div class="hero-content">
+        <h1>Contact Bayyinat</h1>
+        <p>
+          Reach out to us for questions, scheduling, or your free trial session!
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="contact-section">
+      <h2>How to Reach Us</h2>
+
+      <p class="contact-intro">
+        We love hearing from our students and parents! Whether you have
+        questions, feedback, or want to schedule a lesson, here are all the ways
+        to get in touch:
+      </p>
+
+      <div class="contact-grid">
+        <!-- WhatsApp -->
+        <div class="contact-card">
+          <i class="fab fa-whatsapp contact-icon"></i>
+          <h3>WhatsApp</h3>
+          <p>
+            Send us a message on WhatsApp! Click the button below to open a
+            chat.<br />
+            <a href="https://wa.me/1234567890" target="_blank" class="btn"
+              >Chat on WhatsApp</a
+            >
+          </p>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-card">
+          <i class="fas fa-envelope contact-icon"></i>
+          <h3>Email</h3>
+          <p>
+            You can email us any time at:
+            <br />
+            <strong
+              ><a href="mailto:info@bayyinat.com">info@bayyinat.com</a></strong
+            >
+          </p>
+        </div>
+
+        <!-- Calendar / Scheduling -->
+        <div class="contact-card">
+          <i class="fas fa-calendar-alt contact-icon"></i>
+          <h3>Schedule a Session</h3>
+          <p>
+            Prefer to schedule via calendar?
+            <br />
+            <a href="#" class="btn">Book a Time</a>
+            <!-- 
+            Replace '#' with a real link to Calendly, Google Calendar, or 
+            any booking system you might be using 
+          --></p>
+        </div>
+      </div>
+      <!-- /contact-grid -->
+
+      <!-- Contact Form -->
+      <div class="form-section">
+        <h3>Send a Message</h3>
+        <form class="contact-form" action="#" method="POST">
+          <!-- 
+          You can change "action" to a script or service that processes your form data.
+          For now, it's set to "#" to do nothing.
+        -->
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="How can we help?"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Free Trial Section -->
+    <section class="free-trial-section">
+      <h2>One Session Free!</h2>
+      <p>
+        We offer a <strong>free trial session</strong> for all new students.
+        This is a perfect chance to experience our teaching style and see how we
+        can help you love the Quran and Arabic language.
+      </p>
+      <a href="#" class="btn">Claim Your Free Trial</a>
+      <!-- 
+      Link this button to a sign-up page, or open a scheduling form that 
+      automatically applies the free session 
+    --></section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <p>&copy; 2025 Bayyinat. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
