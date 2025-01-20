@@ -1034,3 +1034,11 @@ body {
   border-radius: 5px;
   margin-top: 5px;
 }
+
+/* tawk hide free chat */
+
+.tawk-branding {
+  display: none;
+}
+
+/* end of tawk chat */
