@@ -177,92 +177,57 @@ body {
 
 /* OUR METHOD SECTION (Child-Friendly Cards) */
 /* OUR METHOD SECTION with EMOJIS */
+/* Optional container styling */
 .our-method {
-  margin: 3rem 2rem;
-  text-align: center;
-}
-
-.our-method h2 {
-  font-family: "Fredoka One", cursive;
-  font-size: 2rem;
-  color: #00c1d4;
-  margin-bottom: 1rem;
+  max-width: 1200px; /* or 1000px, etc., if you want to limit width */
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center; /* center the heading, etc. */
 }
 
 .method-intro {
-  max-width: 700px;
-  margin: 0.5rem auto 2rem auto;
-  line-height: 1.5;
-  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
-/* Grid for the 9 cards */
+/* The grid container */
 .method-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
 }
 
-/* Individual card styling */
+/* At screen widths >= 992px, use 4 columns */
+@media (min-width: 992px) {
+  .method-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Basic card styling */
 .method-card {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   padding: 1.5rem;
   text-align: left;
   transition: transform 0.2s ease;
 }
-
-/* Hover effect for fun feedback */
 .method-card:hover {
   transform: translateY(-3px);
 }
-
-/* The emoji box */
 .method-emoji {
   font-size: 2.5rem;
-  /* Make the emoji nice and big */
   margin-bottom: 0.5rem;
 }
-
-/* Card Titles */
 .method-card h3 {
-  font-family: "Fredoka One", cursive;
-  color: #333;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  font-family: 'Fredoka One', cursive;
   font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
 }
-
-/* Paragraph Text */
 .method-card p {
   line-height: 1.4;
-  margin-bottom: 0;
-  margin-top: 0.5rem;
 }
 
-.method-card:hover {
-  transform: translateY(-3px);
-}
-
-/* Card icon/image */
-.method-card img {
-  float: left;
-  margin-right: 1rem;
-  border-radius: 10px;
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-}
-
-/* Title within the card */
-.method-card h3 {
-  font-family: "Fredoka One", cursive;
-  color: #333;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-}
 
 /* Paragraph text */
 .method-card p {
